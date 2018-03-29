@@ -39,6 +39,8 @@ dependencies {
     compile 'com.eyalbira.loadingdots:loading-dots:1.0.2'
     //Add event listener for keyboard change event
     compile 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.1.0'
+    //StateProgress
+    compile 'com.kofigyan.stateprogressbar:stateprogressbar:0.0.6'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'

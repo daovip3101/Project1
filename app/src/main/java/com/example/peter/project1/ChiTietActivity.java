@@ -15,9 +15,8 @@ public class ChiTietActivity extends AppCompatActivity {
     SanPham sp;
     TextView tv_xemthem;
     LinearLayout linearLayout_xemthem;
-    View gio;
     TextView giaSp,tenSp;
-    ImageView imgHinhSp;
+    ImageView imgHinhSp,img_mua_ngay;
     ImageButton img_back_chitiet;
 
     @Override
@@ -35,7 +34,7 @@ public class ChiTietActivity extends AppCompatActivity {
             }
         });
 
-        gio.setOnClickListener(new View.OnClickListener() {
+        img_mua_ngay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(ChiTietActivity.this,GioHangActivity.class);
@@ -50,6 +49,14 @@ public class ChiTietActivity extends AppCompatActivity {
                 finish();
             }
         });
+        // onclik img Mua ngay
+        img_mua_ngay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(ChiTietActivity.this,MuaNgayActivity.class);
+                startActivity(i);
+            }
+        });
 
 
     }
@@ -60,8 +67,8 @@ public class ChiTietActivity extends AppCompatActivity {
         imgHinhSp.setImageResource(sp.getHinh());
     }
     public  void Anhxa(){
+        img_mua_ngay=findViewById(R.id.img_muangay);
         img_back_chitiet=findViewById(R.id.img_btn_back_chitiet);
-        gio = findViewById(R.id.View_gio);
         linearLayout_xemthem = findViewById(R.id.xemthem);
         tv_xemthem = findViewById(R.id.tv_noidungxemthem);
         tv_xemthem.setVisibility(View.INVISIBLE);

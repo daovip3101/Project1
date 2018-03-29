@@ -16,7 +16,6 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.baoyz.widget.PullRefreshLayout;
-import com.example.peter.DuAn1;
 import com.example.peter.project1.Adapter.adaoter_rc_san_pham;
 import com.example.peter.project1.CustomView.Badge;
 import com.example.peter.project1.Interface.ILoadMore;

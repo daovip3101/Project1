@@ -152,13 +152,12 @@
             <!--xài lại view 1 ô cũ-->
             <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
+                android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal" >
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="200dp"
@@ -175,13 +174,13 @@
                         android:layout_width="200dp"
                         android:layout_height="200dp"
                         android:layout_marginLeft="15dp"
-                        android:background="@drawable/bg_login"/>
+                        android:background="@drawable/bg_login" />
 
                     <ImageView
                         android:layout_width="200dp"
                         android:layout_height="200dp"
                         android:layout_marginLeft="15dp"
-                        android:background="@drawable/bg_login"/>
+                        android:background="@drawable/bg_login" />
 
                 </LinearLayout>
             </HorizontalScrollView>
@@ -189,24 +188,24 @@
             <android.support.design.widget.BottomNavigationView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="@color/maunen"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                android:background="@color/maunen">
 
-                <View
-                    android:id="@+id/View_muangay"
+                <ImageView
+                    android:id="@+id/img_muangay"
                     android:layout_width="100dp"
                     android:layout_height="65dp"
+                    android:layout_marginLeft="@dimen/mgLmuangay"
                     android:layout_marginTop="15dp"
-                    android:background="@drawable/muangay"
-                    android:layout_marginLeft="@dimen/mgLmuangay"/>
+                    android:background="@drawable/muangay" />
 
-                <View
-                    android:id="@+id/View_gio"
+                <ImageView
+                    android:id="@+id/img_giohang_chi_tiet"
                     android:layout_width="100dp"
                     android:layout_height="65dp"
+                    android:layout_marginLeft="@dimen/mgLgio"
                     android:layout_marginTop="15dp"
-                    android:background="@drawable/gio"
-                    android:layout_marginLeft="@dimen/mgLgio"/>
+                    android:background="@drawable/gio" />
 
             </android.support.design.widget.BottomNavigationView>
         </LinearLayout>
